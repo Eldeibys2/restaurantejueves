@@ -17,6 +17,7 @@
     <br><br><br>
     <main>
 
+       
         
         <div class="container-fluid">
             <div class="row">
@@ -24,9 +25,11 @@
                     <img src="../static/img/rainbow-vegetables.jpeg" alt="clase" class="img-fluid w-100">
                 </div>
                 <div class="col-12 col-md-8 align-self-center">
-                    <form>
+                    <form method="POST">
                         <h1 classs="fw-bold my-3 animate__animated animate__fadeInDown">REGISTRO DE PLATOS</h1>
                         {{formularioRegistro}}
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-outline-success">Registrar</button>
                     </form>
                 </div>
             </div>
